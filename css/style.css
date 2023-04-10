@@ -29,6 +29,7 @@ body {
 
 }
 
+
 .contenedor {
     max-width: 100rem;  
     width: 90%;
@@ -163,7 +164,6 @@ img{
 
 .header {
     background-image: url(../img/banner2.jpg);
-    height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
