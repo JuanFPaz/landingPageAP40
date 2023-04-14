@@ -1,0 +1,40 @@
+{
+  "usuarios": [
+    {
+      "id": "USR001",
+      "telefono": "+541128650700",
+      "email": "juanf.paz94@gmail.com",
+      "contraseña": "Miau1234",
+      "datos_personales": {
+        "nombre": "Juan",
+        "apellido": "Paz",
+        "direccion": "Avenida Maipu 1050, Vicente Lopez.",
+        "edad": 28
+      }
+    },
+    {
+      "id": "USR002",
+      "telefono": "+541128650700",
+      "email": "luxita2016@gmail.com",
+      "contraseña": "SLO1234",
+      "datos_personales": {
+        "nombre": "Luxita",
+        "apellido": "Videla Paz",
+        "direccion": "14 de julio 1452",
+        "edad": 10
+      }
+    },
+    {
+      "id": "USR003",
+      "telefono": "+541128650700",
+      "email": "awitadeUwu@gmail.com",
+      "contraseña": "Guau1234",
+      "datos_personales": {
+        "nombre": "Pedro",
+        "apellido": "Rodríguez",
+        "direccion": "Calle 789, Villa",
+        "edad": 40
+      }
+    }
+  ]
+}
