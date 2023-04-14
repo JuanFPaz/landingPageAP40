@@ -39,7 +39,7 @@
  
    }
  
-   .contenedor {
+  .contenedor {
      margin: 0 auto;
      max-width: 70rem;
      margin-bottom: 100px;
@@ -60,4 +60,3 @@
  .integrantes .row {
    justify-content: center;
  }
- 
