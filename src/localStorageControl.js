@@ -43,7 +43,7 @@ let userOn = {
                 <li><a href="./contacto.html" class="navegacion__enlace">Contacto</a></li>
                 <li class="dropdown"><a href="#" class="navegacion__enlace dropdown-toggle"  role="button" data-bs-toggle="dropdown">Hola ${userOn.usuarioData[0].datos_personales.nombre }</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" id="log-out">Cerrar Sesion</a></li>
+                        <li><a class="dropdown-item navegacion__enlace" href="#" id="log-out">Cerrar Sesion</a></li>
                     </ul>
                 </li>
             </ul>
@@ -53,13 +53,21 @@ let userOn = {
         document.body.appendChild(scriptDOM);
     } else {
         navContenedor.innerHTML = `
-                <ul class="menu-principal">
-                    <li><a href="./index.html" class="navegacion__enlace">Inicio</a></li>
-                    <li><a href="./nosotros.html" class="navegacion__enlace">Nosotros</a></li>
-                    <li><a href="./viandas.html" class="navegacion__enlace">Viandas</a></li>
-                    <li><a href="./contacto.html" class="navegacion__enlace">Contacto</a></li>
-                    <li><a href="#" class="navegacion__enlace" data-bs-toggle="modal" data-bs-target="#myModal" id="log-In">Log in</a></li>
-                    <li><a href="#" class="navegacion__enlace" data-bs-toggle="modal" data-bs-target="#myModal" id="sign-In">Sign in</a></li>
+                <ul class="menu-principal navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link navegacion__enlace" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navegacion__enlace" href="viandas.html">Viandas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navegacion__enlace" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navegacion__enlace" href="nosotros.html">Nosotros</a>
+              </li>
+                    <li class="nav-item"><a href="#" class="nav-link navegacion__enlace" data-bs-toggle="modal" data-bs-target="#myModal" id="log-In">Log in</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link navegacion__enlace" data-bs-toggle="modal" data-bs-target="#myModal" id="sign-In">Sign in</a></li>
                 </ul>
             `;
         const scriptDOM = document.createElement("script");

@@ -32,8 +32,8 @@ function crearFormularioInicioSesion() {
         </div>
         <div class="row m-4">                            
             <div class="col-12">
-                <button type="submit" id="boton-submit" class="btn btn-primary">
-                    Iniciar sesion.
+                <button type="submit" id="boton-submit" class="btn btn-outline-success w-100 d-block d-md-inline text-verde">
+                    Iniciar sesion
                 </button>
             </div>
         </div>
@@ -42,12 +42,12 @@ function crearFormularioInicioSesion() {
         <div class="row mt-4 pt-4" >
             <ul>
                 <ol class="m-4">                                
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-outline-success w-100 d-block d-md-inline text-verde">
                         Registarse con Facebook
                     </button>
                 </ol>
                 <ol class="m-4">                                
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-outline-success w-100 d-block d-md-inline text-verde">
                         Registarse con Google
                     </button>
                 </ol>
@@ -66,11 +66,11 @@ function crearFormularioRegistroCuenta() {
   <div class="row m-4">
       <div class="col-6">
           <label for="nombre" class="form-label">Nombre:</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Ingrese un nombre" name="nombre">
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" name="nombre">
       </div>
       <div class="col-6">
           <label for="apellido" class="form-label">Apellido:</label>
-          <input type="text" class="form-control" id="apellido" placeholder="Ingrese un nombre" name="apellido">
+          <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" name="apellido">
       </div>
   </div>
   <div class="row m-4 p-12">
@@ -88,21 +88,21 @@ function crearFormularioRegistroCuenta() {
   <div class="row m-4 p-12">
       <div class="col-12">
           <label for="password" class="form-label">Contraseña:</label>
-          <input type="password" class="form-control" id="password" placeholder="Ingrese un email"
+          <input type="password" class="form-control" id="password" placeholder="Ingrese una contraseña"
               name="password">
       </div>
   </div>
   <div class="row m-4 p-12">
       <div class="col-12">
-          <label for="password2" class="form-label">Repite contraseña:</label>
-          <input type="password" class="form-control" id="password2" placeholder="Ingrese un email"
+          <label for="password2" class="form-label">Repita contraseña:</label>
+          <input type="password" class="form-control" id="password2" placeholder="Repita la contraseña"
               name="password2">
       </div>
   </div>
 
   <div class="row m-4">
       <div class="col-12">
-          <button type="submit" id="boton-submit" class="btn btn-primary">
+          <button type="submit" id="boton-submit" class="btn btn-outline-success w-100 d-block d-md-inline text-verde">
               Registarse
           </button>
       </div>
@@ -112,12 +112,12 @@ function crearFormularioRegistroCuenta() {
   <div class="row mt-4 pt-4">
       <ul>
           <ol class="m-4">
-              <button type="button" class="btn btn-primary">
+              <button type="button" class="btn btn-outline-success w-100 d-block d-md-inline text-verde">
                   Registarse con Facebook
               </button>
           </ol>
           <ol class="m-4">
-              <button type="button" class="btn btn-primary">
+              <button type="button" class="btn btn-outline-success w-100 d-block d-md-inline text-verde">
                   Registarse con Google
               </button>
           </ol>

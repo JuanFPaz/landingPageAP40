@@ -21,16 +21,11 @@
     color: black;
 }
 
-.logoContenedor > a:hover{
-    background-color: #4AC707;
-}
 
 .logo__bold{
-    color: #4AC707;
+    color: var(--verde);
 }
-a:hover > .logo__bold{
-    color: white;
-}
+
 
 .navContenedor{
     display: flex;
@@ -61,33 +56,16 @@ a:hover > .logo__bold{
     .menu-principal > li {
       display: block;
     }
-    .navegacion__enlace {
-        display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
-        padding: 10px; /* Reduce el espacio vertical */
-        text-align: center; /* Centra el texto horizontalmente */
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-        font-weight: bold; /* Usa font-weight en lugar de font-style para negrita */
-      }
+    
       .navegacion__enlace:hover {
-        background-color: #4AC707;
-        color: white;
+        color: var(--verde);
       }
     }
 
-.navegacion__enlace{
-    margin: 0 12px 0 12px;
-    padding: 18px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-style: bold;
-}
+
 
 .navegacion__enlace:hover{
-    background-color: #4AC707;
-    color: white
+    color: var(--verde);
 }
 
 /*Article -> section -> container fluid -> background*/
@@ -121,7 +99,7 @@ a:hover > .logo__bold{
 }
 
 .navbar-toggler {
-    border: 4px solid #4AC707;; 
+    border: 4px solid var(--verde); 
 }
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%234ac707' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");

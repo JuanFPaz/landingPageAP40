@@ -28,7 +28,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse navContenedor" id="navbarNav">
-                    <ul class="menu-principal">
+                    <ul class="navbar-nav ms-auto">
                         <!-- localStorageControl se encarga de llenar dinamicamente estp-->
                     </ul>
                 </div>
@@ -46,69 +46,62 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12" style="margin: 0 ;padding: 0">
-                        <div class="background bk-container">
-                            <div class="centrar">
-                                <h1>RESOLVEMOS EL ALMUERZO <span class="logo__bold"> EN TU EMPRESA</span></h1>
-                                <p>ALMUERZOS RICOS, FRESCOS Y SALUDABLES</p>
-                                <a href="viandas.html" class="boton">Ver viandas</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center mt-5 mb-5 ">
-                        <h2 class="text-secondary">¿SIN GANAS DE COCINAR?</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">En Sabores de Oficina te ofrecemos comidas prácticas, rápidas, caseras,
-                        ricas y saludables para hacer tu vida más fácil. Elaboramos nuestras viandas congeladas con
-                        ingredientes de la mejor calidad. Nuestros menús Light, Fit, Veggie, Gourmet y Kids están
-                        pensados para que puedas seguir una dieta equilibrada, con todos los nutrientes necesarios,
-                        y con mucho sabor, de la manera más práctica. Elegí tus platos favoritos a un precio
-                        imbatible y te los llevamos hasta tu casa.
-                    </div>
-                    <div class="col-lg-6">
-                        Disfrutá de Envío Gratuito llevando 14 viandas o más. Llevando 28 viandas
-                        o más de cualquier categoría obtenes un 10% de descuento. Y con la compra de 56 viandas o
-                        más, te descontamos un 15% en el valor total de tu compra. Resolvé sin vueltas el almuerzo o
-                        la cena con tus comidas favoritas. ¿Qué estás esperando para conocernos? ¡Disfrutá de
-                        nuestro servicio de viandas a domicilio desde la comodidad de tu hogar!
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center mt-5 mb-5">
-                        <h2 class="text-secondary">¿POR QUÉ ELEGIRNOS?</h2>
-                    </div>
-                </div>
-                <div class="row contenedor sombra">
-                    <div class="col-lg-4">
-                        <div class="text-center">
-                            <img src="./img/caseras.png" class="img-fluid mb-3" alt="comidas caseras"
-                                style="width:33%;height:66%">
-                            <h3 class="mb-3 text-secondary">Caseras</h3>
+        <div class="card text-bg-dark container-fluid position-relative">
+            <img src="./img/banner2.jpg" class="card-img" alt="banner" style="width:100%;height:600px;">
+            <div
+                class="card-img-overlay d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle -translate-half">
+                <h3 class="card-title text-center mb-3 text-verde">RESOLVEMOS EL ALMUERZO EN TU EMPRESA</h3>
+                <p class="card-text text-center d-block">ALMUERZOS RICOS, FRESCOS Y SALUDABLES.</p>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-outline-success w-100 d-block d-md-inline text-verde"
+                        onclick="window.location.href='viandas.html'">Ver Viandas</button>
 
-                            <p>Nuestros platos son elaborados en casa, con ingredientes de la mejor calidad. Tan
-                                ricos como la comida de tu abuela.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 mb-5 separacion-titulo">
+
+            <h2 class="text-secondary">¿SIN GANAS DE COCINAR?</h2>
+        </div>
+        <div class="container text-center">
+            <div class="row d-flex justify-content-center text-start">
+                <div class="col-lg-6">En Sabores de Oficina te ofrecemos comidas prácticas, rápidas, caseras,
+                    ricas y saludables para hacer tu vida más fácil. Elaboramos nuestras viandas congeladas con
+                    ingredientes de la mejor calidad. Nuestros menús Light, Fit, Veggie, Gourmet y Kids están
+                    pensados para que puedas seguir una dieta equilibrada, con todos los nutrientes necesarios,
+                    y con mucho sabor, de la manera más práctica. Elegí tus platos favoritos a un precio
+                    imbatible y te los llevamos hasta tu casa.</div>
+                <div class="col-lg-6">Disfrutá de Envío Gratuito llevando 14 viandas o más. Llevando 28 viandas
+                    o más de cualquier categoría obtenes un 10% de descuento. Y con la compra de 56 viandas o
+                    más, te descontamos un 15% en el valor total de tu compra. Resolvé sin vueltas el almuerzo o
+                    la cena con tus comidas favoritas. ¿Qué estás esperando para conocernos? ¡Disfrutá de
+                    nuestro servicio de viandas a domicilio desde la comodidad de tu hogar!</div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 mb-5 separacion-titulo">
+
+            <h2 class="text-secondary">¿POR QUÉ ELEGIRNOS?</h2>
+        </div>
+    <main class="contenedor sombra">
+        
+        <div class="container servicios">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        
+                        <img src="./img/caseras.png" class="img-fluid mb-3" alt="comidas caseras" style="width:33%;height:66%">
+                        <h3 class="mb-3 text-secondary">Caseras</h3>
+                        
+                        <p>Nuestros platos son elaborados en casa, con ingredientes de la mejor calidad. Tan
+                            ricos como la comida de tu abuela.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="text-center">
                             <img src="./img/saludables.png" class="img-fluid mb-3" alt="Imagen de la columna 2"
-                                style="width:33%;height:66%;">
+                            style="width:33%;height:66%;">
                             <h3 class="mb-3 text-secondary">Saludables</h3>
                             <p>Gracias al equipo de Lic. en nutricón, aseguran una dieta sabrosa y balanceada.</p>
                         </div>
@@ -116,16 +109,15 @@
                     <div class="col-lg-4">
                         <div class="text-center">
                             <img src="./img/variedad.png" class="img-fluid mb-3" alt="Imagen de la columna 3"
-                                style="width:33%;height:66%;">
+                            style="width:33%;height:66%;">
                             <h3 class="mb-3 text-secondary">Variedad</h3>
-                            <p>Ofrecemos más de 70 platos a un precio imbatible. Organizá tu menú semanal con
+                            <p>Ofrecemos innumerables platos a un precio imbatible. Organizá tu menú semanal con
                                 nuestras viandas.</p>
+                            </div>
                         </div>
                     </div>
+                </main>
                 </div>
-            </div>
-        </section>
-    </article>
     <footer class="footer bg-dark mt-auto py-3 sticky-footer">
         <div class="container">
             <p class="text-center">Todos los derechos reservados Grupo 4</p>
