@@ -37,6 +37,7 @@ let userOn = {
     if (userOn.estaOnline) {
         navContenedor.innerHTML = `
             <ul class="menu-principal">
+                <li><a href="./index.html" class="navegacion__enlace">Inicio</a></li>
                 <li><a href="./nosotros.html" class="navegacion__enlace">Nosotros</a></li>
                 <li><a href="./viandas.html" class="navegacion__enlace">Viandas</a></li>
                 <li><a href="./contacto.html" class="navegacion__enlace">Contacto</a></li>
@@ -53,6 +54,7 @@ let userOn = {
     } else {
         navContenedor.innerHTML = `
                 <ul class="menu-principal">
+                    <li><a href="./index.html" class="navegacion__enlace">Inicio</a></li>
                     <li><a href="./nosotros.html" class="navegacion__enlace">Nosotros</a></li>
                     <li><a href="./viandas.html" class="navegacion__enlace">Viandas</a></li>
                     <li><a href="./contacto.html" class="navegacion__enlace">Contacto</a></li>
