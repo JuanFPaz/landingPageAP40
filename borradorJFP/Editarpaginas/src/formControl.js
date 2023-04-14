@@ -56,7 +56,7 @@ function crearFormularioInicioSesion() {
     </div>
     `;
     const scriptDOM = document.createElement("script");
-    scriptDOM.src = "./login.js";
+    scriptDOM.src = "./src/login.js";
     modalContenido.appendChild(scriptDOM);
   }
 
@@ -102,7 +102,7 @@ function crearFormularioRegistroCuenta() {
 
   <div class="row m-4">
       <div class="col-12">
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" id="boton-submit" class="btn btn-primary">
               Registarse
           </button>
       </div>
@@ -126,6 +126,6 @@ function crearFormularioRegistroCuenta() {
 </div>
     `;
     const scriptDOM = document.createElement("script");
-    scriptDOM.src = "./signin.js";
+    scriptDOM.src = "./src/signin.js";
     modalContenido.appendChild(scriptDOM);
 }

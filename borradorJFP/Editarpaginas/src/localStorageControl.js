@@ -37,9 +37,9 @@ let userOn = {
     if (userOn.estaOnline) {
         navContenedor.innerHTML = `
             <ul class="menu-principal">
-                <li><a href="#" class="navegacion__enlace">Nosotros</a></li>
-                <li><a href="#" class="navegacion__enlace">Viandas</a></li>
-                <li><a href="#" class="navegacion__enlace">Contacto</a></li>
+                <li><a href="./nosotros.html" class="navegacion__enlace">Nosotros</a></li>
+                <li><a href="./viandas.html" class="navegacion__enlace">Viandas</a></li>
+                <li><a href="./contacto.html" class="navegacion__enlace">Contacto</a></li>
                 <li class="dropdown"><a href="#" class="navegacion__enlace dropdown-toggle"  role="button" data-bs-toggle="dropdown">Hola ${userOn.usuarioData[0].datos_personales.nombre }</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#" id="log-out">Cerrar Sesion</a></li>
@@ -48,20 +48,20 @@ let userOn = {
             </ul>
             `;
         const scriptDOM = document.createElement("script");
-        scriptDOM.src = "./userAction.js";
+        scriptDOM.src = "./src/userAction.js"
         document.body.appendChild(scriptDOM);
     } else {
         navContenedor.innerHTML = `
                 <ul class="menu-principal">
-                    <li><a href="#" class="navegacion__enlace">Nosotros</a></li>
-                    <li><a href="#" class="navegacion__enlace">Viandas</a></li>
-                    <li><a href="#" class="navegacion__enlace">Contacto</a></li>
+                    <li><a href="./nosotros.html" class="navegacion__enlace">Nosotros</a></li>
+                    <li><a href="./viandas.html" class="navegacion__enlace">Viandas</a></li>
+                    <li><a href="./contacto.html" class="navegacion__enlace">Contacto</a></li>
                     <li><a href="#" class="navegacion__enlace" data-bs-toggle="modal" data-bs-target="#myModal" id="log-In">Log in</a></li>
                     <li><a href="#" class="navegacion__enlace" data-bs-toggle="modal" data-bs-target="#myModal" id="sign-In">Sign in</a></li>
                 </ul>
             `;
         const scriptDOM = document.createElement("script");
-        scriptDOM.src = "./formControl.js";
+        scriptDOM.src = "./src/formControl.js"
         document.body.appendChild(scriptDOM);
     }
   }

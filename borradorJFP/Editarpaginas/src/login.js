@@ -25,7 +25,7 @@ function validarLogeo(unEmail,unaPass){
 }
 
 function obtenerDatos(unEmail,unaPass){
-    fetch('./usuarios.json')
+    fetch('./src/resource/usuarios.json')
     .then(response => response.json())
     .then(data => {
         let usuarioEncontrado = data.usuarios.find(user => user.email == unEmail);

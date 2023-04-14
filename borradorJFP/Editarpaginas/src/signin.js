@@ -1,5 +1,4 @@
 console.log("Hola soy sigin, un gusto conocerte juan paz");
-const divFormularios = document.getElementById("formulariosDeSignIn");
 const formulario = document.getElementById("formSignIn");
 const botonSubmit = document.getElementById("boton-submit");
 botonSubmit.addEventListener("click", (event) => {
@@ -44,7 +43,7 @@ function validarRegistro() {
       localStorage.setItem("isUserNew", true);
       localStorage.setItem("userNewData", userNewStingfeado);
       const scriptDOM = document.createElement("script");
-      scriptDOM.src = "./userNewControl.js";
+      scriptDOM.src = "./src/userNewControl.js";
       divFormularios.appendChild(scriptDOM);
     }
   });
@@ -62,7 +61,7 @@ function validarEmail(email) {
 
 /*Primero vamos a validar si ya hay un usuario registrado con EMAIL o CELULAR*/
 function obtenerDatos(unEmail, unCelular,callback){
-  fetch('./usuarios.json')
+  fetch('./src/resource/usuarios.json')
   .then(response => response.json())
   .then(data => {
     let usuarioEncontrado = data.usuarios.find(user => user.email == unEmail || user.telefono == "+54"+unCelular)
@@ -75,7 +74,7 @@ function obtenerDatos(unEmail, unCelular,callback){
 }
 
 function establecerIDNewUser(){
-  fetch('./usuarios.json')
+  fetch('./src/resource/usuarios.json')
   .then(response => response.json())
   .then(data => {
     let cantidadDeUsuariosCreados = data.usuarios.length;
