@@ -1,13 +1,22 @@
 const signIn = document.getElementById("sign-In");
-const logIn = document.getElementById("log-In")
+const logIn = document.getElementById("log-In");
 const modalContenido = document.getElementById("contenido");
-const modalCerrado = document.getElementById("myModal")
-let formSignIn = null; // Variable global que guardará el formulario
-let formLogIn = null; // Variable global que guardará el formulario
+const modalCerrado = document.getElementById("myModal");
 
+signIn.addEventListener("click", function (event) {
+  event.preventDefault();
+  crearFormularioRegistroCuenta();
+});
+logIn.addEventListener("click", function (event) {
+  event.preventDefault();
+  crearFormularioInicioSesion();
+});
+modalCerrado.addEventListener("hidden.bs.modal", function () {
+  console.log("Modal cerrado");
+});
 
 function crearFormularioInicioSesion() {
-    modalContenido.innerHTML = `
+  modalContenido.innerHTML = `
     <form id='formLogIn'>
         <div class="row m-4 p-12">
             <div class="col-12">
@@ -18,51 +27,44 @@ function crearFormularioInicioSesion() {
         <div class="row m-4 p-12">
             <div class="col-12">
                 <label for="password" class="form-label">Contraseña:</label>
-                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" name="password" value="" autocomplete="off">
+                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" name="password">
             </div>
         </div>
         <div class="row m-4">                            
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" id="boton-submit" class="btn btn-primary">
                     Iniciar sesion.
                 </button>
             </div>
         </div>
     </form>
+    <button type="submit" id="boton-submit" class="btn btn-primary">
+    Iniciar sesion.
+</button>
     <div class="footer">
         <div class="row mt-4 pt-4" >
             <ul>
                 <ol class="m-4">                                
                     <button type="button" class="btn btn-primary">
-                        Conectarse con Facebook
+                        Registarse con Facebook
                     </button>
                 </ol>
                 <ol class="m-4">                                
                     <button type="button" class="btn btn-primary">
-                        Conectase con Google
+                        Registarse con Google
                     </button>
                 </ol>
             </ul>
         </div>
     </div>
-    </form>
     `;
-    formLogIn = document.getElementById('formLogIn');
-    formLogIn.addEventListener('submit', function(event) {
-      event.preventDefault();
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
-      // Valida los elementos del formulario según tus requisitos
-      if (email === '' || password === '') {
-        alert('Debes ingresar tu correo electrónico y contraseña');
-      } else {
-        alert("hola!");
-      }
-    });
+    const scriptDOM = document.createElement("script");
+    scriptDOM.src = "./login.js";
+    modalContenido.appendChild(scriptDOM);
   }
 
 function crearFormularioRegistroCuenta() {
-    modalContenido.innerHTML = `
+  modalContenido.innerHTML = `
     <form id='formSignIn'>
         <div class="row m-4">
             <div class="col-6">
@@ -118,32 +120,7 @@ function crearFormularioRegistroCuenta() {
         </div>
     </div>
     `;
-    formSignIn = document.getElementById('formSignIn');
-    formSignIn.addEventListener('submit', function(event) {
-      event.preventDefault();
-      const nombre = document.getElementById('nombre').value;
-      const apellido = document.getElementById('apellido').value;
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
-      const repeatPassword = document.getElementById('password2').value;
-      // Valida los elementos del formulario según tus requisitos
-      if (nombre === '' || apellido === '' || email === '' || password === '' || repeatPassword === '' || password !== repeatPassword) {
-        alert('Debes completar todos los campos y asegurarte de que las contraseñas coincidan');
-      } else {
-        // Envía el formulario a través de la acción correspondiente o realiza otra acción de tu elección
-        formSignIn.submit();
-      }
-    });
-  }
-signIn.addEventListener("click", function(event) {
-    event.preventDefault();
-    crearFormularioRegistroCuenta();
-});
-logIn.addEventListener("click", function(event){
-    event.preventDefault();
-    crearFormularioInicioSesion();
-  })
-modalCerrado.addEventListener("hidden.bs.modal",function(){
-    console.log("Modal cerrado");
-})
-
+    const scriptDOM = document.createElement("script");
+    scriptDOM.src = "./signin.js";
+    modalContenido.appendChild(scriptDOM);
+}
